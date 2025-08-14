@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+    <header>
+      <div class="left">
+        <img src="logo.png" alt="Logo" class="logo" />
+        <div class="name-title">
+          <div class="name">ANETA MAREČKOVÁ</div>
+          <div class="title">Designér</div>
+        </div>
+      </div>
+
+      <nav>
+        <a href="#about">O mně</a>
+        <a href="#works">Ukázky prací</a>
+      </nav>
+    </header>
+
+    <main class="main-content">
+      <!-- Úvodní sekce -->
+      <section class="intro">
+        <div class="intro__text">
+          <strong class="intro__greeting"
+            >Ahoj, jsem Aneta, začínající designérka</strong
+          >
+          <p>Navrhuji weby, aplikace a menší grafiku.</p>
+        </div>
+        
+              </section>
+
+      <section class="intro__contactbutton">
+        <button class="intro__button2" onclick="window.location.href='#contact'">
+          Napište mi
+        </button>
+      </section>
+
+      <!-- Sekce Ukázky prací -->
+      <section id="works" class="works">
+        <h2 class="works__title">Ukázky prací</h2>
+        <div class="work-item">
+          <img 
+          src="Navrh1.png" 
+          alt="Ukázka práce 1" 
+          data-bs-toggle="modal"
+          data-bs-target="#exampleModal"
+          />
+          
+        </div>
+        <div class="work-item">
+          <img src="Navrh2.png" alt="Ukázka práce 2" />
+        </div>
+        <div class="work-item">
+          <img src="Navrh3.png" alt="Ukázka práce 3" />
+        </div>
+      </section>
+
+      <!-- Sekce O mně -->
+      <section id="about" class="about">
+        <div class="about__images">
+          <img src="Kresba1.jpg" alt="Kresba ptáka" />
+        </div>
+        <div class="about__text">
+          <p>
+            Kreativita byla vždy součástí mého života. Jako dítě jsem trávila
+            hodiny se skicářem a pastelkami a jen kreslila a tvořila. Později
+            jsem se na chvíli vydala jiným směrem - ke studiu ekonomie a
+            managementu. Získala jsem pevné základy ve strategickém a
+            analytickém myšlení, objevila svět marketingu a pochopila, jak
+            fungují komunikace a značka.
+          </p>
+          <p>
+            Dnes se vracím ke kořenům, ale s novými nástroji v rukou. Místo
+            pastelek a papíru používám grafické programy a řádky kódu v HTML a
+            CSS. Propojuji estetiku s funkčností, aby mé návrhy nejen dobře
+            vypadaly, ale i bezchybně fungovaly.
+          </p>
+        </div>
+        <div class="about__images">
+          <div class="about_img2">
+            <img src="Kresba2.jpg" alt="Kresba plameňáků" />
+          </div>
+        </div>
+      </section>
+
+      <!-- Sekce Dovednosti -->
+      <section class="skills">
+        <div class="skills__group">
+          <h2 class="skills_group__title">Dovednosti</h2>
+
+<table>
+  <tbody>
+       <tr>
+        <td><strong class="skills__title">Metody &amp; techniky</strong></td>
+        <td><div class="tag-list">
+            <span class="tag">Wireframing</span>
+            <span class="tag">Prototypování</span>
+            <span class="tag">Tvorba person</span>
+            <span class="tag">Empathy mapping</span>
+            <span class="tag">Customer Journey Mapping</span>
+            <span class="tag">Sitemapping</span>
+            <span class="tag">Storyboarding</span>
+            <span class="tag">Uživatelský výzkum</span>
+            <span class="tag">SEO</span>
+            <span class="tag">PPC</span>
+          </div></td>
+       </tr>
+       <tr>
+        <td><strong class="skills__title">Nástroje</strong></td>
+        <td><div class="tag-list">
+            <span class="tag">Figma</span>
+            <span class="tag">FigJam</span>
+            <span class="tag">Canva</span>
+            <span class="tag">Affinity Photo + Designer</span>
+            <span class="tag">Microsoft Office</span>
+            <span class="tag">Google Suite</span>
+            <span class="tag">Trello</span>
+            <span class="tag">Github</span>
+            <span class="tag">Vercel</span>
+            <span class="tag">Google Ads + Analytics</span>
+            <span class="tag">Sklik</span>
+          </div></td>
+       </tr>
+       <tr>
+        <td><strong class="skills__title">Technologie</strong></td>
+        <td><div class="tag-list">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+          </div></td>
+       </tr>
+  </tbody>
+</table>
+
+<div class="cv-download">
+<a href="CV.pdf" target="_blank" rel="noopener noreferrer" class="CVlink">Zobrazit CV</a>
+</div>     
+        
+      </section>
+
+      <!-- Kontaktní formulář -->
+      <section id="contact" class="contact">
+        <form class="contact__form">
+          <label for="name">Jméno</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Vaše jméno"
+            required
+          />
+
+          <label for="email">E-mail</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Váš email"
+            required
+          />
+
+          <label for="message"></label>
+          <textarea
+            id="message"
+            name="message"
+            placeholder="Napište zprávu..."
+            required
+          ></textarea>
+
+          <button type="submit">Odeslat</button>
+        </form>
+      </section>
+
+       </main>
+
+    <!-- Paticka -->
+    <footer class="footer">
+      © 2025, Aneta Marečková, kontakt: mareckova.aneta@seznam.cz
+    </footer>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Návrh To Do mobilní aplikace</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="App.png" alt="Prototyp návrhu mobilní aplikace pro správu úkolů">
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+  </body>
+</html>
